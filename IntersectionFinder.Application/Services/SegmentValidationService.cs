@@ -1,5 +1,6 @@
-﻿namespace IntersectionFinder.Application.Models;
+﻿namespace IntersectionFinder.Application.Services;
 using FluentResults;
+using IntersectionFinder.Application.Models;
 
 public interface ISegmentValidationService
 {

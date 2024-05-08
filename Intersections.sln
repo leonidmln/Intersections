@@ -11,12 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntersectionFinder.Domain",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntersectionFinder.Infrastructure", "IntersectionFinder.Infrastructure\IntersectionFinder.Infrastructure.csproj", "{80AFF8E1-1DD1-4C2F-B22D-B328BE81C443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntersectionFinder.Application", "IntersectionFinder.Application\IntersectionFinder.Application.csproj", "{23A45874-E0F3-4D97-B9FB-C8239952450D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntersectionFinder.Application", "IntersectionFinder.Application\IntersectionFinder.Application.csproj", "{23A45874-E0F3-4D97-B9FB-C8239952450D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{01B48876-A3FD-4954-B3DF-DCFAB943F576}"
 	ProjectSection(SolutionItems) = preProject
 		database_sql.sql = database_sql.sql
+		Readme.md = Readme.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7EB770AB-6147-4D19-AD82-150C41C0296B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntersectionFinder.UnitTests", "Tests\IntersectionFinder.UnitTests\IntersectionFinder.UnitTests.csproj", "{28011DD3-07AA-4E48-9548-4020BC21EB59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +45,10 @@ Global
 		{23A45874-E0F3-4D97-B9FB-C8239952450D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23A45874-E0F3-4D97-B9FB-C8239952450D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23A45874-E0F3-4D97-B9FB-C8239952450D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28011DD3-07AA-4E48-9548-4020BC21EB59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28011DD3-07AA-4E48-9548-4020BC21EB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28011DD3-07AA-4E48-9548-4020BC21EB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28011DD3-07AA-4E48-9548-4020BC21EB59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +58,7 @@ Global
 		{BCD219DE-E619-41F9-91FD-246B966FA9D8} = {48D3A647-A459-4DA8-BAD1-633BC9FC892F}
 		{80AFF8E1-1DD1-4C2F-B22D-B328BE81C443} = {48D3A647-A459-4DA8-BAD1-633BC9FC892F}
 		{23A45874-E0F3-4D97-B9FB-C8239952450D} = {48D3A647-A459-4DA8-BAD1-633BC9FC892F}
+		{28011DD3-07AA-4E48-9548-4020BC21EB59} = {7EB770AB-6147-4D19-AD82-150C41C0296B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89FFFACC-46EF-45E3-A61C-C431369FA39E}

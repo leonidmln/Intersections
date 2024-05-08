@@ -2,7 +2,6 @@
 using IntersectionFinder.Application.Models;
 using IntersectionFinder.Application.Repositories;
 using NetTopologySuite.Geometries;
-using System.Data.Entity.Spatial;
 
 namespace IntersectionFinder.Application.Services;
 

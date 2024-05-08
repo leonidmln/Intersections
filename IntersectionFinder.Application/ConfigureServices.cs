@@ -1,5 +1,4 @@
-﻿using IntersectionFinder.Application.Models;
-using IntersectionFinder.Application.Repositories;
+﻿using IntersectionFinder.Application.Repositories;
 using IntersectionFinder.Application.Services;
 using IntersectionFinder.Infrastructure;
 using Microsoft.EntityFrameworkCore;
