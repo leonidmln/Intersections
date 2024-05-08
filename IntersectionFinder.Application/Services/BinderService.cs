@@ -7,7 +7,7 @@ namespace IntersectionFinder.Application.Services;
 public interface IBinderService
 {
     PoligonModel ConvertToViewModel(Rectangle rectangle);
-    PoligonModel ConvertToCustomeModel(Rectangle rectangle);
+    PoligonModel ConvertToCustomModel(Rectangle rectangle);
 }
 
 public class BinderService: IBinderService
@@ -31,7 +31,7 @@ public class BinderService: IBinderService
         };
     }
 
-    public PoligonModel ConvertToCustomeModel(Rectangle rectangle)
+    public PoligonModel ConvertToCustomModel(Rectangle rectangle)
     {
         var polygon = rectangle.Geometry as Polygon;
         var segments = GetSegments(polygon);

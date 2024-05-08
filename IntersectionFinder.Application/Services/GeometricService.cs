@@ -53,6 +53,6 @@ public class GeometricService : IGeometricService
 
         var list = await _rectangleRepository.GetRectanglesWithIntersectionsAlternativeMethodAsync(line);
 
-        return Result.Ok(list.Select(x => _binderService.ConvertToCustomeModel(x)));
+        return Result.Ok(list.Select(x => _binderService.ConvertToCustomModel(x)));
     }
 }
