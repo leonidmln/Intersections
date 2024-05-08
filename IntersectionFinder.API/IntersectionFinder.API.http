@@ -15,5 +15,5 @@ Accept: application/json
 
 ###
 
-GET {{IntersectionFinder.API_HostAddress}}/Intersection/CustomeGeometric?StartX=0&StartY=0&EndX=5&EndY=5
+GET {{IntersectionFinder.API_HostAddress}}/Intersection/CustomGeometric?StartX=0&StartY=0&EndX=5&EndY=5
 Accept: application/json

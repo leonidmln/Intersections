@@ -30,7 +30,7 @@ namespace IntersectionFinder.API.Controllers
         [ProducesResponseType(typeof(IEnumerable<PoligonModel>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("CustomeGeometric")]
+        [HttpGet("CustomGeometric")]
         public async Task<IActionResult> GetIntersections([FromQuery] SegmentModel segment)
         {
             var result = await _geometricService.FindGeometricIntersectionsAsync(segment);
