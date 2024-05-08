@@ -16,6 +16,9 @@ namespace IntersectionFinder.API.Controllers
             _geometricService = geometricService;
         }
 
+        [ProducesResponseType(typeof(IEnumerable<PoligonModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("Geometric")]
         public async Task<IActionResult> Get([FromQuery] SegmentModel segment)
         {
@@ -24,6 +27,9 @@ namespace IntersectionFinder.API.Controllers
             return result.ToActionResult();
         }
 
+        [ProducesResponseType(typeof(IEnumerable<PoligonModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("CustomeGeometric")]
         public async Task<IActionResult> GetIntersections([FromQuery] SegmentModel segment)
         {
