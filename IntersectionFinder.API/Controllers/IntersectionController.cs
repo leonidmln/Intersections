@@ -19,7 +19,15 @@ namespace IntersectionFinder.API.Controllers
         [HttpGet("Geometric")]
         public async Task<IActionResult> Get([FromQuery] SegmentModel segment)
         {
-            var result = await _geometricService.FindIntersections(segment);
+            var result = await _geometricService.FindIntersectionsAsync(segment);
+
+            return result.ToActionResult();
+        }
+
+        [HttpGet("CustomeGeometric")]
+        public async Task<IActionResult> GetIntersections([FromQuery] SegmentModel segment)
+        {
+            var result = await _geometricService.FindGeometricIntersectionsAsync(segment);
 
             return result.ToActionResult();
         }

@@ -18,7 +18,8 @@ public static class ConfigureServices
 
         services.AddDbContext<IntersectionsContext>(
             cfg =>
-            cfg.UseSqlServer(intersectionsConnectionString), 
+            cfg.UseSqlServer(intersectionsConnectionString, sqlOption =>
+            sqlOption.UseNetTopologySuite()), 
             ServiceLifetime.Scoped, ServiceLifetime.Singleton);
 
         services.AddScoped<IBinderService, BinderService>();

@@ -19,6 +19,10 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[RectangleGeometry]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[RectangleSegment]",
          "ObjectType": 0
       },

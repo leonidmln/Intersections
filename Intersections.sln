@@ -13,6 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntersectionFinder.Infrastr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntersectionFinder.Application", "IntersectionFinder.Application\IntersectionFinder.Application.csproj", "{23A45874-E0F3-4D97-B9FB-C8239952450D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{01B48876-A3FD-4954-B3DF-DCFAB943F576}"
+	ProjectSection(SolutionItems) = preProject
+		database_sql.sql = database_sql.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

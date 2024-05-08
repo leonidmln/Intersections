@@ -1,6 +1,6 @@
 @IntersectionFinder.API_HostAddress = http://localhost:5084
 
-GET {{IntersectionFinder.API_HostAddress}}/Intersection/Geometric?StartX=0&StartY=0&EndX=15&EndY=5
+GET {{IntersectionFinder.API_HostAddress}}/Intersection/Geometric?StartX=0&StartY=0&EndX=5&EndY=5
 Accept: application/json
 
 ###
@@ -13,3 +13,7 @@ Accept: application/json
 GET {{IntersectionFinder.API_HostAddress}}/Intersection/Geometric?StartX=0&StartY=5&EndX=0&EndY=5
 Accept: application/json
 
+###
+
+GET {{IntersectionFinder.API_HostAddress}}/Intersection/CustomeGeometric?StartX=0&StartY=0&EndX=5&EndY=5
+Accept: application/json
